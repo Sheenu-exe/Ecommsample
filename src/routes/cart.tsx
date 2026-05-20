@@ -46,7 +46,7 @@ function CartPage() {
                 <img 
                   src={it.product.image} 
                   alt={it.product.name}
-                  className="h-full w-full object-cover mix-blend-multiply opacity-90" 
+                  className="h-full w-full object-cover" 
                 />
               </div>
               <div className="flex flex-1 flex-col">

@@ -60,7 +60,7 @@ function ProductPage() {
               <img 
                 src={product.image} 
                 alt={product.name}
-                className="h-full w-full object-cover mix-blend-multiply opacity-90" 
+                className="h-full w-full object-cover" 
               />
             </div>
             <div className="absolute bottom-4 right-4 z-10 rounded-full bg-card px-3 py-1 font-display text-xs uppercase tracking-widest text-foreground shadow-sm">
@@ -133,7 +133,7 @@ function ProductPage() {
                   <img 
                     src={p.image} 
                     alt={p.name}
-                    className="h-full w-full object-cover transition-transform group-hover:scale-105 mix-blend-multiply opacity-90" 
+                    className="h-full w-full object-cover transition-transform group-hover:scale-105" 
                   />
                 </div>
               </div>
