@@ -13,13 +13,17 @@ export function ProductCard({ product }: { product: Product }) {
         className="paper-grain relative aspect-[4/5] overflow-hidden rounded-2xl border-2 border-foreground stamp-shadow transition-transform duration-300 group-hover:-translate-y-1"
         style={{ backgroundColor: product.color, color: product.ink }}
       >
-        <div className="absolute left-3 top-3 rounded-full border border-current px-2 py-0.5 font-display text-[10px] uppercase tracking-widest">
+        <div className="absolute left-3 top-3 z-10 rounded-full border border-current px-2 py-0.5 font-display text-[10px] uppercase tracking-widest bg-background/80 backdrop-blur-sm">
           {product.category}
         </div>
-        <div className="absolute inset-0 grid place-items-center p-8">
-          <CroissantMascot className="h-2/3 w-2/3 opacity-90 transition-transform duration-500 group-hover:rotate-3 group-hover:scale-105" stroke="currentColor" />
+        <div className="absolute inset-0 grid place-items-center">
+          <img 
+            src={product.image} 
+            alt={product.name}
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 mix-blend-multiply opacity-90" 
+          />
         </div>
-        <div className="absolute bottom-3 right-3 rounded-full bg-card px-3 py-1 font-display text-sm font-700 text-foreground">
+        <div className="absolute bottom-3 right-3 z-10 rounded-full bg-card px-3 py-1 font-display text-sm font-700 text-foreground shadow-sm">
           ${product.price}
         </div>
       </div>

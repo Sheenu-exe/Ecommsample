@@ -8,6 +8,7 @@ export type Product = {
   blurb: string;
   description: string;
   sizes: string[];
+  image: string;
 };
 
 export const PRODUCTS: Product[] = [
@@ -22,6 +23,7 @@ export const PRODUCTS: Product[] = [
     description:
       "A 240gsm heavyweight cotton tee with a hand-drawn screen print of our running croissant. Boxy fit, dropped shoulder. Pre-shrunk and built to outlive the trend cycle.",
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    image: "/images/mascot_tee_1779287425290.png",
   },
   {
     slug: "club-hoodie",
@@ -34,6 +36,7 @@ export const PRODUCTS: Product[] = [
     description:
       "A 450gsm brushed fleece hoodie with a tonal embroidered chest mark. Self-fabric drawcord, kangaroo pocket, ribbed cuffs. Wears in beautifully.",
     sizes: ["S", "M", "L", "XL"],
+    image: "/images/club_hoodie_1779287442427.png",
   },
   {
     slug: "bakers-cap",
@@ -46,6 +49,7 @@ export const PRODUCTS: Product[] = [
     description:
       "A washed cotton 6-panel cap with brass slide-buckle closure. Soft crown, curved brim, woven label at the back.",
     sizes: ["One Size"],
+    image: "/images/bakers_cap_1779287457708.png",
   },
   {
     slug: "crumb-tote",
@@ -58,6 +62,7 @@ export const PRODUCTS: Product[] = [
     description:
       "A 14oz natural canvas tote with reinforced straps. Roomy enough for a baguette, two pastries, and your laptop.",
     sizes: ["One Size"],
+    image: "/images/crumb_tote_1779287474606.png",
   },
   {
     slug: "logotype-crewneck",
@@ -70,6 +75,7 @@ export const PRODUCTS: Product[] = [
     description:
       "A 380gsm loopback cotton crewneck with our outlined logotype across the chest. Relaxed fit, ribbed hem and cuffs.",
     sizes: ["S", "M", "L", "XL"],
+    image: "/images/logotype_crewneck_1779287500852.png",
   },
   {
     slug: "cc-monogram-tee",
@@ -82,6 +88,7 @@ export const PRODUCTS: Product[] = [
     description:
       "Classic-fit 200gsm cotton tee with the CC submark printed large at the back. Pairs with everything.",
     sizes: ["XS", "S", "M", "L", "XL"],
+    image: "/images/cc_monogram_tee_1779287515634.png",
   },
   {
     slug: "field-beanie",
@@ -94,6 +101,7 @@ export const PRODUCTS: Product[] = [
     description:
       "Soft acrylic ribbed beanie with a folded cuff and woven label. Warm without the itch.",
     sizes: ["One Size"],
+    image: "/images/field_beanie_1779287535023.png",
   },
   {
     slug: "club-socks",
@@ -106,6 +114,7 @@ export const PRODUCTS: Product[] = [
     description:
       "Crew-length cotton blend socks with a terry footbed and woven Crumb Club logo. Sold as a single pair.",
     sizes: ["One Size"],
+    image: "/images/club_socks_1779287555561.png",
   },
 ];
 

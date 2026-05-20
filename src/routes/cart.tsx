@@ -43,7 +43,11 @@ function CartPage() {
                 className="paper-grain grid aspect-square w-28 shrink-0 place-items-center overflow-hidden rounded-xl border-2 border-foreground sm:w-36"
                 style={{ backgroundColor: it.product.color, color: it.product.ink }}
               >
-                <CroissantMascot className="h-3/4 w-3/4" stroke="currentColor" />
+                <img 
+                  src={it.product.image} 
+                  alt={it.product.name}
+                  className="h-full w-full object-cover mix-blend-multiply opacity-90" 
+                />
               </div>
               <div className="flex flex-1 flex-col">
                 <div className="flex items-start justify-between gap-2">

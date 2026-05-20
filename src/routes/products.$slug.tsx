@@ -53,13 +53,17 @@ function ProductPage() {
             className="paper-grain relative aspect-square overflow-hidden rounded-3xl border-2 border-foreground stamp-shadow"
             style={{ backgroundColor: product.color, color: product.ink }}
           >
-            <div className="absolute left-4 top-4 rounded-full border border-current px-3 py-1 font-display text-[10px] uppercase tracking-widest">
+            <div className="absolute left-4 top-4 z-10 rounded-full border border-current px-3 py-1 font-display text-[10px] uppercase tracking-widest bg-background/80 backdrop-blur-sm">
               {product.category}
             </div>
-            <div className="absolute inset-0 grid place-items-center p-10">
-              <CroissantMascot className="h-3/4 w-3/4" stroke="currentColor" />
+            <div className="absolute inset-0 grid place-items-center">
+              <img 
+                src={product.image} 
+                alt={product.name}
+                className="h-full w-full object-cover mix-blend-multiply opacity-90" 
+              />
             </div>
-            <div className="absolute bottom-4 right-4 rounded-full bg-card px-3 py-1 font-display text-xs uppercase tracking-widest text-foreground">
+            <div className="absolute bottom-4 right-4 z-10 rounded-full bg-card px-3 py-1 font-display text-xs uppercase tracking-widest text-foreground shadow-sm">
               Drop 04
             </div>
           </div>
@@ -125,8 +129,12 @@ function ProductPage() {
                 className="paper-grain relative aspect-[4/5] overflow-hidden rounded-2xl border-2 border-foreground stamp-shadow"
                 style={{ backgroundColor: p.color, color: p.ink }}
               >
-                <div className="absolute inset-0 grid place-items-center p-6">
-                  <CroissantMascot className="h-2/3 w-2/3 transition-transform group-hover:scale-105" stroke="currentColor" />
+                <div className="absolute inset-0 grid place-items-center">
+                  <img 
+                    src={p.image} 
+                    alt={p.name}
+                    className="h-full w-full object-cover transition-transform group-hover:scale-105 mix-blend-multiply opacity-90" 
+                  />
                 </div>
               </div>
               <h3 className="mt-2 font-display text-base">{p.name}</h3>
